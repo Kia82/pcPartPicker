@@ -1,0 +1,27 @@
+{%  extends "base.html" %}
+
+{% block content %}
+ <div class="form-container">
+        <form class="grid" action="/build" method="POST">
+            <center> <h3>Insert a New Build</h3></center>
+
+            <div class="form-group">
+                <label for="buildID" class="form-label">Build ID</label>
+                <input type="text" name="buildID" id="buildID" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="userID" class="form-label">User ID</label>
+                <input type="text" name="userID" id="userID" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="price" class="form-label">Price</label>
+                <input type="text" name="price" id="price" class="form-input">
+            </div>
+
+            <button type="submit" class="form-submit">Submit</button>
+        </form>
+    </div>
+
+{% endblock %}

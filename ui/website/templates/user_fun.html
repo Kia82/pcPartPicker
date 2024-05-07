@@ -1,0 +1,76 @@
+{%  extends "base.html" %}
+
+{% block content %}
+
+<h2>User Fun</h2>
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+
+ <form class="grid" id="aggregation" action="/userfun" method="GET">
+
+
+      <div class="form-right-box">
+     <button onclick="displayData()">Num of builds the user with the highest average build price has</button>
+    <h3></h3>
+    <button type="button" id="usedAllComponents">Users that have used all the components in the database across all their builds</button>
+
+     </div>
+
+     <div id="result"></div>
+
+
+     <div class="form-left-box">
+  <button onclick="fetchDataAndDisplayData()">Total Money Each User has Spent on Builds</button>
+
+     <h3></h3>
+       <button type="button">Num of Builds Users with 3 or More Builds Have</button>
+     <h3></h3>
+           <button type="button" id="resetCanvas">Reset Canvas</button>
+
+     </div>
+
+ </form>
+
+<script>
+    // document.getElementById('totalMoneySpent').addEventListener('click', function() {
+    //     fetchData('totalMoneySpent');
+    // });
+    //
+    // document.getElementById('numOfBuilds').addEventListener('click', function() {
+    //     fetchData('numOfBuilds');
+    // });
+    //
+    // document.getElementById('resetCanvas').addEventListener('click', function() {
+    //     fetchData('resetCanvas');
+    // });
+    //
+    // document.getElementById('highestAverageBuilds').addEventListener('click', function() {
+    //     fetchData('highestAverageBuilds');
+    // });
+    //
+    // document.getElementById('usedAllComponents').addEventListener('click', function() {
+    //     fetchData('usedAllComponents');
+    // });
+
+  function displayData(data) {
+    // Update the HTML elements to display the data
+    document.getElementById('result').innerHTML = data;
+}
+
+function fetchDataAndDisplayData() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/userfun', true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var responseData = JSON.parse(xhr.responseText);
+            displayData(responseData.data);
+        }
+    };
+    xhr.send();
+}
+
+</script>
+
+
+
+
+{% endblock %}

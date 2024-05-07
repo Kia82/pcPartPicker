@@ -1,0 +1,102 @@
+     body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .form-container > form {
+            margin-bottom: 20px;
+        }
+       .form-container h3:before,
+        .form-container h3:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 2px;
+            background-color: #333;
+        }
+        .form-container h3:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+        .form-container h3:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-submit {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: darkslategrey;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .form-submit:hover {
+            background-color: #1a1a1a;
+        }
+        .action_btn {
+            width: 15%;
+            margin: 0 auto;
+            display: inline;
+            padding: 10px;
+            background-color: darkslategrey;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+        .form-left-box {
+            width: 45%;
+            float: left;
+        }
+        .form-right-box {
+            width: 45%;
+            float: right;
+        }
+        .link {
+              display: ruby;
+            width: 75%;
+            padding: 5px;
+            background-color: orange;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .link:hover{
+            background-color: deeppink;
+        }
+
+.content {
+    text-align: center;
+}

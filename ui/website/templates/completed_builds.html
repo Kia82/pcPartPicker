@@ -1,0 +1,19 @@
+{%  extends "base.html" %}
+
+{% block content %}
+    <div class="form-container">
+        <form class="grid" action="/completed_builds" method="POST">
+            <center><h3>Post a Build</h3></center>
+            <div class="form-group">
+                <label for="buildno" class="form-label">Build Number</label>
+                <input type="text" name="buildno" id="buildno" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="date" class="form-label">Date Made</label>
+                <input type="text" name="date" id="date" class="form-input">
+            </div>
+            <button type="submit" class="form-submit">Submit</button>
+        </form>
+    </div>
+
+{% endblock %}
