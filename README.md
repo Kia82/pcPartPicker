@@ -13,6 +13,8 @@ Improved User Experience: By simplifying and refining the search experience, thi
 
 Benefits:
 
-Streamlined Part Selection: The enhanced search features developed in this project will allow PC builders to find the perfect components for their needs more efficiently.
-Greater Control and Customization: Users will gain more control over their component selection process through the ability to create highly specific searches.
-Improved User Experience: By simplifying and refining the search experience, this project aims to make PCPartPicker an even more valuable resource for PC enthusiasts.
+- Streamlined Part Selection: The enhanced search features developed in this project will allow PC builders to find the perfect components for their needs more efficiently
+
+- Greater Control and Customization: Users will gain more control over their component selection process through the ability to create highly specific searches
+
+- Improved User Experience: By simplifying and refining the search experience, this project aims to make PCPartPicker an even more valuable resource for PC enthusiasts
