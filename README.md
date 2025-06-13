@@ -1,20 +1,30 @@
-This project focused on a super simplfied version of PCPartPicker, a website that empowers PC builders by offering a vast database of components and compatibility checks.
+# pcPartPicker
 
-Here is what it offers Key Functionalities:
+A **lightweight Python/HTML web app** inspired by PCPartPicker that enables advanced part search, price comparison, and compatibility validation in one intuitive place.
 
-Advanced Search Capabilities: This project aims to develop advanced search filters or tools that leverage PCPartPicker's data. These tools will enable users to perform more granular component selection based on specific criteria beyond what the current PCPartPicker interface offers. (Provide more specifics about your search enhancements here. For instance, will it allow filtering by price ranges, performance benchmarks, or specific features?)
-Complex Query Support: By building upon PCPartPicker's existing search functionalities, this project strives to enable users to construct even more intricate search queries. This will allow them to refine their component selection process to a greater degree. (Describe how your project expands on complex queries. Will it involve user-defined filters, combining multiple criteria, or other functionalities?)
-Benefits:
+## 🔍 Overview
 
-Streamlined Part Selection: The enhanced search features developed in this project will allow PC builders to find the perfect components for their needs more efficiently.
-Greater Control and Customization: Users will gain more control over their component selection process through the ability to create highly specific searches.
-Improved User Experience: By simplifying and refining the search experience, this project aims to make PCPartPicker an even more valuable resource for PC enthusiast
+pcPartPicker connects to component databases to let users:
 
+- 🔧 **Search and filter** by price, benchmarks, specs (e.g., wattage, socket, performance)
+- ⚙️ **Check component compatibility** (CPU ↔ motherboard, PSU power, RAM capacity)
+- 💰 **Compare vendor prices** in real-time if integrated with live data feeds
+- 📊 **Review detailed spec sheets** to inform better build decisions
 
-Benefits:
+## 🚀 Why use it?
 
-- Streamlined Part Selection: The enhanced search features developed in this project will allow PC builders to find the perfect components for their needs more efficiently
+- Ideal for students, DIY PC builders, hobbyists or developers prototyping a PC-building assistant.
+- Acts as a base for automating build-generation, price tracking, or hardware research.
 
-- Greater Control and Customization: Users will gain more control over their component selection process through the ability to create highly specific searches
+## 🛠️ Tech Stack
 
-- Improved User Experience: By simplifying and refining the search experience, this project aims to make PCPartPicker an even more valuable resource for PC enthusiasts
+- **Python** backend handling data retrieval, compatibility logic, and filter processing  
+- **SQL** (or lightweight in-memory store) for part catalog integration  
+- **HTML/CSS + minimal JS** UI for a responsive, browser-based experience  
+
+## 📦 Features
+
+- **Interactive search filters**: stuff like “price ≤ $100”, “socket = AM5”, “TDP < 95 W”
+- **Compatibility layer**: verifies constraints like socket compatibility, RAM type, and PSU wattage
+- **Easy deployment**: runs as a standalone web service, no complex setup required
+- **Extensible design**: plug in extra data sources (e.g., live price APIs, vendor availability)
